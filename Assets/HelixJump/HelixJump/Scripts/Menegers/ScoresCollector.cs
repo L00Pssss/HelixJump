@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ScoresCollector : BallEvents
@@ -34,8 +32,6 @@ public class ScoresCollector : BallEvents
                 accumulateScore++;                                                  //увеличиваем бонусные очки
             }
         }
-
-
         if (type == SegmentType.Default)                                            //Сбрасываем запомненный пустой этаж и бонусные очки
         {
             scoreIndex = 0;

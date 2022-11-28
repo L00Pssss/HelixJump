@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,11 +14,6 @@ public class PaletteChangeAll : MonoBehaviour
     [SerializeField] private Material ball;
 
     Color[] color = new Color[6];
-    //private MeshRenderer meshRenderer;
-    //private void Awake()
-    //{
-    //    meshRenderer = GetComponent<MeshRenderer>();
-    //}
     private void Awake()
     {       
         for (int i = 0; i < color.Length; i++)
@@ -34,7 +27,6 @@ public class PaletteChangeAll : MonoBehaviour
         Image image = GetComponent<Image>();
         RandomObjectColor();
     }
-
     private void RandomObjectColor()
     {
         axis.color = color[0];
@@ -44,9 +36,5 @@ public class PaletteChangeAll : MonoBehaviour
         materialTrap.color = color[4];
         materialFinish.color = color[5];
         camera.GetComponent<Camera>().backgroundColor = color[5];
-        
-
     }
-
-
 }

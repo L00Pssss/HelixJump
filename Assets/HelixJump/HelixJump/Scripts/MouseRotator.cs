@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MouseRotator : MonoBehaviour
@@ -13,5 +11,4 @@ public class MouseRotator : MonoBehaviour
             transform.Rotate(0, Input.GetAxis(mouseInputAxis) * -sentitive, 0);
         }
     }
-
 }

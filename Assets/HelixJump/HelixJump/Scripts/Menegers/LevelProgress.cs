@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,17 +8,12 @@ public class LevelProgress : BallEvents
 
     [SerializeField] private ScoresCollector scoresCollector;
 
-
-
     protected override void Awake()
     {
         base.Awake();
 
         Load();
     }
-
-
-
 //#if UNITY_EDITOR
     private void Update()
     {

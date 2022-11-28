@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public abstract class OneColliderTrigger : MonoBehaviour
@@ -21,5 +19,4 @@ public abstract class OneColliderTrigger : MonoBehaviour
         if (lastCollider == other)
             lastCollider = null;
     }
-
 }

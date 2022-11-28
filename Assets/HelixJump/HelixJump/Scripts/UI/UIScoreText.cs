@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,8 +12,6 @@ public class UIScoreText : BallEvents
     {
         scroeRecordText.text = markMaxScoreText + ": " + scoresCollector.RecordScores;
     }
-
-  //  public string ScoreRecordText => scroeRecordText.ToString();
     protected override void OnBallCollisionSegment(SegmentType type)
     {
         if (type != SegmentType.Trap)
